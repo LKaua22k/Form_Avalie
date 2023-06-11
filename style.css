@@ -14,6 +14,7 @@ body, input, select, textarea {
     --back-body:#BFD7E4;
     --back-form:#FFFFFF;
     --back-input:#FAFAFC;
+    --legend-color:#253B51;
     --border-color:#E6E6F0;
     --label-color:#4E4958;
     --sapn-color:#C1BCCC;
@@ -82,12 +83,29 @@ form{
     flex-direction: column;
     padding: 3.1rem 6.4rem 6.4rem 6.4rem ;
     background-color: var(--back-form);
+    gap: 3.1rem;
+}
+
+fieldset{
+    border: none;
+}
+
+fieldset legend{
+    font-family: var(--font-Staatliches);
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    color: var(--legend-color);
+    border-bottom: 1px solid var(--border-color);
+    width: 100%;
+    padding-bottom: 0.8rem;
+    text-align: center;
+    margin-bottom: 3.1rem;
 }
 
 .fieldset-wrapper{
     display: flex;
     flex-direction: column;
-    gap: 2.4rem;
+    gap: 3.1rem;
 }
 
 .col-2{
@@ -122,11 +140,21 @@ form{
     margin-left: 0.8rem;
 }
 
-.input-wrapper input{
+.input-wrapper input,.input-wrapper select,.input-wrapper textarea{
     background-color: var(--back-input);
     border: 1px solid var(--border-color);
     height: 5.5rem;
     border-radius: 0.8rem;
     padding: 0 2.4rem;
     color: red;
+}
+
+.input-wrapper select{
+    width: 30rem;
+    appearance: none;
+}
+
+.input-wrapper textarea{
+    padding: 2.4rem;
+    height: 16.6rem;
 }
