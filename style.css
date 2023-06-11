@@ -13,6 +13,10 @@ body, input, select, textarea {
     --back-header-top:#F67669;
     --back-body:#BFD7E4;
     --back-form:#FFFFFF;
+    --back-input:#FAFAFC;
+    --border-color:#E6E6F0;
+    --label-color:#4E4958;
+    --sapn-color:#C1BCCC;
 
     --font-Staatliches:'Staatliches', cursive;
     --font-Poppins:'Poppins', sans-serif;
@@ -71,4 +75,58 @@ header h2{
     font-weight: 400;
     font-size: 2.4rem;
     line-height: 3.4rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 3.1rem 6.4rem 6.4rem 6.4rem ;
+    background-color: var(--back-form);
+}
+
+.fieldset-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.col-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col-2 .input-wrapper input {
+    width: 30rem;
+}
+
+
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.input-wrapper label{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--label-color);
+    line-height: 2rem;
+}
+
+.input-wrapper span{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--sapn-color);
+    line-height: 2rem;
+    margin-left: 0.8rem;
+}
+
+.input-wrapper input{
+    background-color: var(--back-input);
+    border: 1px solid var(--border-color);
+    height: 5.5rem;
+    border-radius: 0.8rem;
+    padding: 0 2.4rem;
+    color: red;
 }
