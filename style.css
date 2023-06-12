@@ -105,6 +105,10 @@ fieldset legend{
     margin-bottom: 3.1rem;
 }
 
+input:invalid{
+    border: 1px solid red;
+}
+
 .fieldset-wrapper{
     display: flex;
     flex-direction: column;
